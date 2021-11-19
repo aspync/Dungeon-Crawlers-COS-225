@@ -1,0 +1,7 @@
+List of possible items to collect:
+
+sword - +2 attack
+health ring +2 HP
+shield +2 defense
+magic hat +1 to all stats
+mysterious box - kills you instantly
