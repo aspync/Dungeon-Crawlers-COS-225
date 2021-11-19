@@ -1,0 +1,5 @@
+Tundra
+Desert
+Swamp
+Lava
+Clouds
