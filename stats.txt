@@ -4,3 +4,7 @@ Attack -- damage dealt
 Strength -- +2, etc damage attack increase
 Items -- items can increase or decrease any of the 4 stats
 Keys -- keys are undroppable and can be carried forever once picked up
+
+
+HP is carried over, while defense and strength will only change with items.
+Attack can be changed by enviroments
