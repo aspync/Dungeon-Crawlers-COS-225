@@ -3,3 +3,4 @@ Desert-
 Swamp- 
 Lava- certain stepping stones, no buffs, one room results in instakill
 Clouds- reduce damage by half
+Forest - set up into a maze, the trees are trickery
