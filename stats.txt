@@ -3,3 +3,4 @@ Defense -- +2, etc damage taken decrease
 Attack -- damage dealt
 Strength -- +2, etc damage attack increase
 Items -- items can increase or decrease any of the 4 stats
+Keys -- keys are undroppable and can be carried forever once picked up
