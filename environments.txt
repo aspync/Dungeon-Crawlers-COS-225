@@ -1,6 +1,6 @@
 Tundra- 1 cold damage for 1 room away, 2 for 2 rooms, etc.
-Desert- 
-Swamp- 
+Desert- FIRST BOSS == SPHYNX, must answer RIDDLES
+Swamp- drop items? UNDECIDED
 Lava- certain stepping stones, no buffs, one room results in instakill
 Clouds- reduce damage by half
 Forest - set up into a maze, the trees are trickery
