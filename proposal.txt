@@ -1,0 +1,36 @@
+Project Members:
+Hayley Raab, Aspyn Call, Hannah Kline
+
+Our project will be a Dungeon Crawler. The goal is to defeat the bosses to collect keys.
+Our dungeon crawler will have many different classes that the user can choose from. The map will include several enviroments with different buffs/debuffs.
+
+Tundra- 1 cold damage for 1 room away, 2 for 2 rooms, etc.
+Desert- FIRST BOSS == SPHYNX, must answer RIDDLES
+Swamp- drop items? UNDECIDED
+Lava- certain stepping stones, no buffs, one room results in instakill
+Clouds- reduce damage by half
+Forest - set up into a maze, the trees are trickery
+
+Each character (including the monsters) will have HP, Attack, Defense, Strength, and Items.
+
+HP -- health, will be carried over
+Defense -- +2, etc damage taken decrease
+Attack -- damage dealt
+Strength -- +2, etc damage attack increase
+Items -- items can increase or decrease any of the 4 stats
+Keys -- keys are undroppable and can be carried forever once picked up
+
+List of possible items to collect:
+
+sword - +2 attack
+health ring +2 HP
+shield +2 defense
+magic hat +1 to all stats
+
+How we will incorporate the requirements:
+Map will be read from a file, while the scoreboard will be outputted to a file (and high scores).
+Classes/objects will be used to generate characters and character classes.
+Command line arguments/ user input in console will be used for a CONTINUE function, a code will be given at checkpoints that can then be inputed.
+Error catching will be used with both try-catch blocks for files, and if statements for certain situations.
+We will use data structure by using a linked list for the map.
+Overloading functions will be used as needed.
