@@ -1,0 +1,29 @@
+In the Desert a large statue is at rest. It has the head of a human, the body of a lion, and the wings of a falcon.
+As you approach, it comes to life and turns to face you.
+"Approach traveler, do not be afraid.
+Answer these 3 riddles and be on your way."
+
+Riddle #1:
+I am something people celebrate or resist. I change people’s thoughts and lives. I am obvious to some people but, to others, I am a mystery. What am I?
+
+Riddle #2:
+What grows up while growing down?
+
+Riddle #3:
+What bird do you associate with lifting weight?
+
+
+If correct: "Very good. Here is the next."
+
+If wrong: Try again, you have %d chances left." (3 chances total per question)
+
+If out of chances: "Your time has run out."
+DEATH MESSAGE
+
+If all correct: "You have answered all of my riddles correctly, collect your prize."
+SPHYNX KEY
+
+
+Riddle #1 Answer: Age
+Riddle #2 Answer: Goose or Duck
+Riddle #3 Answer: A crane.
