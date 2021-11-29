@@ -1,0 +1,12 @@
+Jenny Greenteeth
+
+British folklore warns that passing by a marsh on a misty evening means risking an encounter with Jenny Greenteeth, a sharp-
+toothed crone who pulls unwary wanderers into the depths and devours them. Even today in parts of England, “Jenny Greenteeth”
+is another name for the duckweeds (Lemna sp.), aquatic plants whose tiny leaves form a continuous mat over the water’s surface that
+may appear as solid ground to the eyes of the very young or very old.
+
+Abilities
+  Master of Disguise: Appears as solid ground or a mat of duckweed to travelers, player must make a DC 13 wisdom check to find her.
+  
+Weapons
+  Bite: Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 6 piercing damage and 4 poison damage.
