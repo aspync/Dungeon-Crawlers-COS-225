@@ -1,0 +1,4 @@
+How is the score going to work?
+
+
+File output can be scoreboard
