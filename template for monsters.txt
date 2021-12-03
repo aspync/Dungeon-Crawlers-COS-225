@@ -1,0 +1,41 @@
+class Animal{
+
+  protected int legs;
+  protected String name;
+
+  Animal(String inName){
+    name = inName;
+    legs = 0;
+  }
+
+  String getName(){
+    return name;
+  }
+
+  int getLegs(){
+    return legs;
+  }
+
+  void makeSound(){
+    System.out.println("*animal sound*");
+  }
+
+
+
+}
+
+
+class Cat extends Animal{
+
+  Cat(String inName){
+    super(inName);
+    legs = 4;
+//calls the super classes constructor
+}
+
+  void  makeSound(){
+    System.out.println("meow");
+  } // can overwrite class with subclasses if you want more specific
+
+
+}
