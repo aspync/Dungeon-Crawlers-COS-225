@@ -1,0 +1,27 @@
+class Room{
+
+  Room []directions;
+  private String description;
+
+  Room(String d){
+    description = d;
+    directions = new Room[4];
+    for(int i = 0; i < 4; i++) directions[i] = null;
+  }
+
+  Room(){
+    description = "A white room";
+    directions = new Room[4];
+    for(int i = 0; i < 4; i++) directions[i] = null;
+  }
+//  void createRoom(int dir, String desc);
+//    if(directions[dir] != null) return;
+//    Room temp = new Room(desc);
+//    directions[dir] = temp;
+//    int otherSide = (dir+2)%4;
+//    temp.directions[otherSide] = this;
+//}
+  public  String getDesc(){
+    return description;
+}
+}
