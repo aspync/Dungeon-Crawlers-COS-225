@@ -1,14 +1,14 @@
-class character{
+class Player{
   private int hp;
   private int attack;
   private String name;
 
-  character(){
+  Player(){
     name = "Traveler";
     attack = 1;
     hp = 10;
   }
-  character(String name, int attack, int hp){
+  Player(String name, int attack, int hp){
     this.name = name;
     this.attack = attack;
     this.hp = hp;
