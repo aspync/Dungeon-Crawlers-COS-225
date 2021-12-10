@@ -1,0 +1,13 @@
+wall,wall,wall,wall,wall,wall,wall,wall,wall,wall,wall,wall,wall,wall,wall,wall
+wall,wall,wall,wall,wall,wall,wall,wall,wall,wall,wall,swamp,wall,swamp,swamp,wall
+wall,wall,forest,wall,wall,wall,wall,wall,tundra,wall,tundra,swamp,swamp,swamp,swamp,wall
+wall,forest,forest,wall,wall,forest,forest,wall,tundra,tundra,tundra,swamp,swamp,swamp,swamp,wall
+wall,wall,forest,wall,forest,forest,forest,wall,wall,tundra,tundra,swamp,swamp,wall,swamp,wall
+wall,wall,forest,wall,forest,forest,wall,wall,tundra,tundra,tundra,swamp,swamp,swamp,swamp,wall
+wall,forest,forest,wall,forest,forest,forest,tunnel,Gate,tunnel,start,desert,desert,desert,wall,wall
+wall,wall,forest,wall,forest,forest,wall,wall,clouds,clouds,clouds,desert,desert,desert,wall,wall
+wall,wall,forest,wall,forest,forest,forest,wall,clouds,clouds,clouds,desert,desert,desert,wall,wall
+wall,forest,forest,wall,forest,forest,forest,wall,clouds,wall,clouds,stone,desert,desert,wall,wall
+wall,wall,forest,forest,forest,forest,forest,wall,clouds,clouds,clouds,stone,stone,wall,wall,wall
+wall,wall,wall,wall,wall,wall,wall,wall,clouds,clouds,clouds,lava,lava,wall,wall,wall
+wall,wall,wall,wall,wall,wall,wall,wall,wall,wall,wall,wall,wall,wall,wall,wall
