@@ -15,6 +15,16 @@ class Player{
     this.attack = attack;
     this.hp = hp;
   }
+    public boolean takeDamage(int dmg){
+    hp -= dmg;
+    System.out.format("%s takes %d damage\n", name, dmg);
+    if(hp <= 0){
+        System.out.format("%s has died\n", name);
+        return true;
+    }
+    return false;
+  
+  
   public String getName(){
     return this.name;
   }
