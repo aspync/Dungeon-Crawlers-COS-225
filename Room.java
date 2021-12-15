@@ -3,6 +3,9 @@ class Room{
   private String description;
   private String environment;
   private Boolean bossRoom;
+  //get key check
+
+
 
   Room(String e){
     environment = e;
@@ -27,6 +30,21 @@ class Room{
     else if(environment.equals("wall")){
       description = "A wall stands in your way";
       //Figure out how to auto send backwards
+    }
+    else if(environment.equals("tunnel")){
+      description = "This hallway is quite dark.. wait no.. it's a tunnel";
+    }
+    else if(environment.equals("stone")){
+      description = "Stepping stones lead into the darkness..";
+    }
+    else if(environment.equals("Gate")){
+      description = "A large gate stands before you";
+    }
+    else if(environment.equals("start")){
+      description = "You started here";
+    }
+    else if(environment.equals("end")){
+      description = "You have reached the end";
     }
     else{
       description = "Invalid Room Type";
