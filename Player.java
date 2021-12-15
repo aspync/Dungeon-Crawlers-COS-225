@@ -1,3 +1,5 @@
+import java.util.Random;
+
 class Player{
   private int hp;
   private int attack;
@@ -20,5 +22,15 @@ class Player{
     if(name.equals(""))
       return;
     this.name = name;
+  }
+  public int attack(){
+    Random rand = new Random();
+    return rand.nextInt(attack);
+  }
+  public void heal(){
+    this.hp += 20;
+  }
+  public boolean isAlive(){
+    return hp > 0;
   }
 }
