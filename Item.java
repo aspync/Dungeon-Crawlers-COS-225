@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Random;
 
 class Item{
 
@@ -25,6 +26,9 @@ class Item{
     items.add(new Item("shield",2,"defense"));
     items.add(new Item("magic hat",1,"all stats"));
     items.add(new Item("mysterious box",0,"kills instantly"));
+    items.add(new Item("sKey",10,"entry to the next room"));
+    items.add(new Item("jKey",10,"entry to the next room"));
+    items.add(new Item("iKey",10,"entry to the next room"));
     return items;
   }
 
@@ -32,6 +36,13 @@ class Item{
     this.name = n;
     this.points = p;
     this.type = t;
+  }
+
+  public static Item getRandomItem(){
+    Random random = new Random();
+    ArrayList<Item> items = getItems();
+    int index = random.nextInt(items.size());
+    return items.get(index);
   }
 
   public String toString() {
