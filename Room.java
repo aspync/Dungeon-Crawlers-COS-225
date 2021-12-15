@@ -1,11 +1,11 @@
 class Room{
-  Room []directions;
   private String description;
   private String environment;
   private Boolean bossRoom;
   //get key check
 
-
+  public Entity Monster = null;
+  //public Item key = null;
 
   Room(String e){
     environment = e;
@@ -41,41 +41,18 @@ class Room{
       description = "A large gate stands before you";
     }
     else if(environment.equals("start")){
-      description = "You started here";
+      description = "You are at the start";
     }
     else if(environment.equals("end")){
       description = "You have reached the end";
     }
+    else if(environment.equals("Sphinx")){
+      description = "";
+      Monster = new Sphinx();
+    }
     else{
       description = "Invalid Room Type";
     }
-    directions = new Room[4];
-    for(int i = 0; i < 4; i++) directions[i] = null;
-  }
-
-  Room(){
-    description = "Blank room";
-    directions = new Room[4];
-    for(int i = 0; i < 4; i++) directions[i] = null;
-  }
-
-  void createRoom(int dir, String enviro){
-    if(directions[dir] != null) return;
-    Room temp = new Room(enviro);
-    directions[dir] = temp;
-    int otherSide = (dir+2)%4;
-    temp.directions[otherSide] = this;
-  }
-
-  void createBossRoom(int dir, String enviro, Boolean boss){
-    if(directions[dir] != null) return;
-    Room temp = new Room(enviro);
-    directions[dir] = temp;
-    int otherSide = (dir+2)%4;
-    temp.directions[otherSide] = this;
-
-    //How to represent the boss is
-
   }
 
 
@@ -85,10 +62,6 @@ class Room{
 
   String getEnvironment(){
     return environment;
-  }
-
-  Boolean getBoss(){
-    return bossRoom;
   }
 
   @Override
