@@ -1,37 +1,30 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class Player{ //creates player class
-  private int hp;
-  private int attack;
-  private String name;
+public class Player extends Entity{ //creates player class
 
   Player(){ //sets player variables to a default value
-    name = "Traveler";
-    attack = 1;
-    hp = 10;
+    super("Traveler", 10, 1);
   }
-  Player(String name, int attack, int hp){ //gets name, hp, and attack from user
-    this.name = name;
-    this.attack = attack;
-    this.hp = hp;
+  Player(String name, int hp, int atk){ //gets name, hp, and attack from user
+    super(name, hp, atk);
   }
   public String getName(){ //returns the name of the player
     return this.name;
   }
-  public String setName(Scanner s){ //sets the player's name to the user's input for name
+  public void setName(Scanner s){ //sets the player's name to the user's input for name
     String input;
     while(true){
       System.out.println("What is your name, traveler? ");
       input = s.nextLine();
       break;
     }
-    return input;
+    name = input;
   }
   public int getAttack(){ //returns the player's attack stat
-    return this.attack;
+    return this.atk;
   }
-  public int setAttack(Scanner s){ //sets the attack stat to the user's input
+  public void setAttack(Scanner s){ //sets the attack stat to the user's input
     int input;
     while(true){
       try{
@@ -42,12 +35,12 @@ public class Player{ //creates player class
         System.out.println("That is not a valid input");
       }
     }
-    return input;
+    atk = input;
   }
   public int getHP(){ //returns players hit points
     return this.hp;
   }
-  public int setHP(Scanner s){ //sets the player's hit points to the user's input
+  public void setHP(Scanner s){ //sets the player's hit points to the user's input
     int input;
     while(true){
       try{
@@ -58,16 +51,10 @@ public class Player{ //creates player class
         System.out.println("That is not a valid input");
       }
     }
-    return input;
-  }
-  public int Attack(){ //generates random number between 1 and the player's attack stat when attacking a monster
-    Random rand = new Random();
-    return rand.nextInt(attack);
+    hp = input;
+    maxhp = input;
   }
   public void heal(){ //heals the player for 20 points when called
     this.hp += 20;
-  }
-  public boolean isAlive(){ //keeps track of whether the player is still alive or not
-    return hp > 0;
   }
 }
