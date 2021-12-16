@@ -19,10 +19,14 @@ public class Player{ //creates player class
   public String getName(){ //returns the name of the player
     return this.name;
   }
-  public void setName(String name){ //sets the player's name to the user's input for name
-    if(name.equals(""))
-      return;
-    this.name = name;
+  public String setName(Scanner s){ //sets the player's name to the user's input for name
+    String input;
+    while(true){
+      System.out.println("What is your name, traveler? ");
+      input = s.nextLine();
+      break;
+    }
+    return input;
   }
   public int getAttack(){ //returns the player's attack stat
     return this.attack;
@@ -35,7 +39,7 @@ public class Player{ //creates player class
         input = Integer.parseInt(s.nextLine());
         break;
       } catch (NumberFormatException e){
-        System.out.format("\n%s is not a valid input\n", input);
+        System.out.println("That is not a valid input");
       }
     }
     return input;
@@ -51,7 +55,7 @@ public class Player{ //creates player class
         input = Integer.parseInt(s.nextLine());
         break;
       } catch (NumberFormatException e){
-        System.out.format("\n%s is not a valid input\n", input);
+        System.out.println("That is not a valid input");
       }
     }
     return input;
