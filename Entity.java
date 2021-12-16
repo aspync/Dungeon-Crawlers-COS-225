@@ -1,3 +1,6 @@
+import java.util.Random;
+
+
 public class Entity{
   protected int maxhp, hp, atk;
   protected String name;
@@ -17,5 +20,12 @@ public class Entity{
     maxhp = h;
     hp = h;
     atk = a;
+  }
+  public int Attack(){ //generates random number between 1 and the entity's attack stat when attacking a monster
+    Random rand = new Random();
+    return rand.nextInt(atk);
+  }
+  public boolean isAlive(){ //keeps track of whether an entity is still alive or not
+    return hp > 0;
   }
 }
