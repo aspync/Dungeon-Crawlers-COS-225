@@ -1,11 +1,10 @@
 class Room{
   private String description;
   private String environment;
-  private Boolean bossRoom;
   //get key check
 
-  public Entity Monster = null;
-  //public Item key = null;
+  public Monster M = null;
+  public Item key = null;
 
   Room(String e){
     environment = e;
@@ -48,7 +47,13 @@ class Room{
     }
     else if(environment.equals("Sphinx")){
       description = "";
-      Monster = new Sphinx();
+      M = new Sphinx();
+    //  key = new Item("sKey");
+    }
+    else if(environment.equals("jenny")){
+      description = "The swamp makes you feel uneasy, as if you are not alone. \nYou seem to be stuck on the other side of the water. \nHowever, you see what appears to be a path of grass that leads to the other side of the river. \nAs you step on it, the path sinks under the water. \nYou catch yourself and make it back on the shore. \nYou see a disgusting, horrible creature rise out of the water. \nYou have met Jenny Greenteeth. \nYou are surprised.";
+      M = new Jenny();
+    //  key = new Item("jKey");
     }
     else{
       description = "Invalid Room Type";
