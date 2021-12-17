@@ -47,21 +47,32 @@ class map{
     while(true){
     try{
       System.out.println(dungeon[x][y].getDesc());
+      System.out.println();
       System.out.println("Which direction?");
+      System.out.println();
       String dir = scan.nextLine();
 
       if(dungeon[x][y].getEnvironment().equals("Sphinx")){
-        riddle1(a,dungeon[x][y].Monster,scan);
+        Sphinx.riddle1(a,dungeon[x][y].M,scan);
       }
       if(dungeon[x][y].getEnvironment().equals("jenny")){
-        dungeon[x][y].Monster.Jenny();
+        dungeon[x][y].M.Battle(a,scan);
       }
-
 
 
       if(dir.equalsIgnoreCase("north")){
       if(!dungeon[x-1][y].getEnvironment().equals("wall")){
           x--;
+          if(dungeon[x][y].getEnvironment().equals("tundra")){
+            System.out.println("It's really cold...\n");
+            a.takeDamage(1);
+            System.out.println();
+          }
+          if(dungeon[x][y].getEnvironment().equals("lava")){
+            System.out.println("It's too hot!!\n");
+            a.takeDamage(10);
+            System.out.println();
+          }
         }
       else{System.out.println("There is a wall there.\n");}
       }
@@ -69,6 +80,16 @@ class map{
       if(dir.equalsIgnoreCase("south")){
       if(!dungeon[x+1][y].getEnvironment().equals("wall")){
           x++;
+          if(dungeon[x][y].getEnvironment().equals("tundra")){
+            System.out.println("It's really cold...\n");
+            a.takeDamage(1);
+            System.out.println();
+          }
+          if(dungeon[x][y].getEnvironment().equals("lava")){
+            System.out.println("It's too hot!!\n");
+            a.takeDamage(10);
+            System.out.println();
+          }
         }
       else{System.out.println("There is a wall there.\n");}
       }
@@ -76,6 +97,16 @@ class map{
       if(dir.equalsIgnoreCase("east")){
       if(!dungeon[x][y+1].getEnvironment().equals("wall\n")){
           y++;
+          if(dungeon[x][y].getEnvironment().equals("tundra")){
+            System.out.println("It's really cold...\n");
+            a.takeDamage(1);
+            System.out.println();
+          }
+          if(dungeon[x][y].getEnvironment().equals("lava")){
+            System.out.println("It's too hot!!\n");
+            a.takeDamage(10);
+            System.out.println();
+          }
         }
       else{System.out.println("There is a wall there.\n");}
       }
@@ -83,6 +114,16 @@ class map{
       if(dir.equalsIgnoreCase("west")){
       if(!dungeon[x][y-1].getEnvironment().equals("wall")){
           y--;
+          if(dungeon[x][y].getEnvironment().equals("tundra")){
+            System.out.println("It's really cold...\n");
+            a.takeDamage(1);
+            System.out.println();
+          }
+          if(dungeon[x][y].getEnvironment().equals("lava")){
+            System.out.println("It's too hot!!\n");
+            a.takeDamage(10);
+            System.out.println();
+          }
         }
       else{System.out.println("There is a wall there.\n");}
       }
