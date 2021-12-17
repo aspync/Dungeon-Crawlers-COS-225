@@ -15,7 +15,7 @@ public class Entity{
     }
     return false;
   }
-  public Entity(String n, int h, int a){
+  public Entity(String n, int h, int a){ //defines each variable used and their types
     name = n;
     maxhp = h;
     hp = h;
