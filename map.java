@@ -4,9 +4,7 @@ import java.io.FileNotFoundException;
 import java.lang.NumberFormatException;
 
 //create key check in gate Room
-//create walls impassible
 //create End /Winning screen
-//player take damage
 
 class map{
 
@@ -17,11 +15,6 @@ class map{
 //these two x and y sets the starting location of the game
     int x = 6;
     int y = 10;
-
-//if(dungeon[x][y]).isWall(){
-//  System.out.print("Cannot enter wall there;")
-//}
-
 
     Room dungeon[][] = new Room[13][16];
     File f = new File("map.txt");
