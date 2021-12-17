@@ -7,17 +7,19 @@ import java.util.Scanner;
 
 public class Scoreboard {
     private ArrayList<Player> players = new ArrayList<Player>();
+//Creating a new Array List
 
     public void addPlayer(Player player){
         this.players.add(player);
-
     }
+//Adds a player
 
     public Player createPlayer(String name, int hp, int attack){
         Player player = new Player(name, hp, attack);
         this.addPlayer(player);
         return player;
     }
+//Creates a player and returns their name hp and attack    
 
     public void writeScoreboard(String fileName){
         File f = new File(fileName);
@@ -31,9 +33,10 @@ public class Scoreboard {
             w.close();
         } catch (IOException e){
             System.out.println("Problem");
-
         }
     }
+// Writes into the scoreboard file with the stats of the player
+    
     public ArrayList<Player> readPlayers(String fileName) {
         this.players = new ArrayList<Player>();
         File f = new File(fileName);
@@ -48,7 +51,6 @@ public class Scoreboard {
                 int player_attack = Integer.parseInt(array[2]);
                 Player t = new Player(player_name, player_hp, player_attack);
                 this.players.add(t);
-
             }
             s.close();
 
@@ -59,6 +61,7 @@ public class Scoreboard {
         }
         return players;
     }
+// Opens a file with the array list     
 
     public static void main (String[] args) {
         Scoreboard scoreboard = new Scoreboard();
@@ -72,8 +75,10 @@ public class Scoreboard {
         System.out.println(scoreboard.getPlayers());
         System.out.println(scoreboard1.getPlayers());
     }
+// Testing the code    
 
     public ArrayList<Player> getPlayers() {
         return players;
     }
+// Returning the player and their score    
 }
