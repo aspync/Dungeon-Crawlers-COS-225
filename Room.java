@@ -1,15 +1,16 @@
 class Room{
   private String description;
   private String environment;
-  //get key check
+  //Get key check
 
   public Monster M = null;
   public Item key = null;
+  //Defining the classes and variables and setting them to null
 
-  Room(String e){
+  Room(String e){ //Providing the player with a description and directions of each room that they enter
     environment = e;
     if(environment.equals("lava")){
-      description = "The room is filled with lava";
+      description = "The room is filled with lava";  
     }
     else if(environment.equals("tundra")){
       description = "The cold rages on in the Tundra";
@@ -61,11 +62,11 @@ class Room{
   }
 
 
-  String getDesc(){
+  String getDesc(){ //Returns the description
     return description;
   }
 
-  String getEnvironment(){
+  String getEnvironment(){ //Returns the type of environment
     return environment;
   }
 
