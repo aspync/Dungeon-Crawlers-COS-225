@@ -1,4 +1,4 @@
 How is the score going to work?
 
-
-File output can be scoreboard
+The scoreboard can write out player names and stats to a file.
+The scoreboard can also read in players from a file.
