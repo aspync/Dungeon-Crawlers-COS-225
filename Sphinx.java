@@ -1,14 +1,14 @@
 import java.util.Scanner;
 
 
-class Sphinx extends Entity{
+class Sphinx extends Monster{ //The Sphinx class is created specifically to make a Sphinx, which inherits the aspects of the Monster class.
   Player a = new Player();
-  public Sphinx(){
+  public Sphinx(){ //This function gives the Sphinx some stats
     super("Sphinx",10000,10000);
   }
 
 
-    public static void riddle1(Player a, Monster b, Scanner scan){
+    public static void riddle1(Player a, Monster b, Scanner scan){ //This function describes the Sphinx, presents the player with the first riddle, and determines whether their answer is correct or not
     int count = 0;
     System.out.println("\n \nIn the Desert a large statue is at rest.\nIt has the head of a human, the body of a lion, and the wings of a falcon.\nAs you approach, it comes to life and turns to face you.\n Approach traveler, do not be afraid. \n \n Answer these 3 riddles and be on your way.");
 
@@ -27,8 +27,11 @@ class Sphinx extends Entity{
       else{
         count++;
         int chance = 3-count;
-        if(chance == -1){
+        if(chance == 0){
           a.takeDamage(1000);
+          if(!a.isAlive()){
+            System.exit(0);
+          }
         }
         System.out.println("\n");
         System.out.format("Try Again, %d chances left",chance);
@@ -37,7 +40,7 @@ class Sphinx extends Entity{
     }
     }
 
-    public static void riddle2(Player a, Monster b, Scanner scan){
+    public static void riddle2(Player a, Monster b, Scanner scan){ //This function presents the player with the second riddle and determines whether their answer is correct or not
       int count = 0;
       Boolean cor2 = false;
 
@@ -56,6 +59,9 @@ class Sphinx extends Entity{
         int chance = 3-count;
         if(chance == -1){
           a.takeDamage(1000);
+          if(!a.isAlive()){
+            System.exit(0);
+          }
         }
         System.out.println("\n");
         System.out.format("Try Again, %d chances left",chance);
@@ -64,7 +70,7 @@ class Sphinx extends Entity{
   }
   }
 
-  public static void riddle3(Player a, Monster b, Scanner scan){
+  public static void riddle3(Player a, Monster b, Scanner scan){ //This function presents the player with the third riddle and determines whether their answer is correct or not
     int count = 0;
     Boolean cor3 = false;
 
@@ -83,6 +89,9 @@ class Sphinx extends Entity{
       int chance = 3-count;
       if(chance == -1){
         a.takeDamage(1000);
+        if(!a.isAlive()){
+          System.exit(0);
+        }
       }
       System.out.println("\n");
       System.out.format("Try Again, %d chances left",chance);
