@@ -16,6 +16,11 @@ class map{
     int x = 6;
     int y = 10;
 
+//if(dungeon[x][y]).isWall(){
+//  System.out.print("Cannot enter wall there;")
+//}
+
+
     Room dungeon[][] = new Room[13][16];
     File f = new File("map.txt");
     try{
@@ -50,6 +55,10 @@ class map{
       }
       if(dungeon[x][y].getEnvironment().equals("jenny")){
         dungeon[x][y].M.Battle(a,scan);
+      }
+
+      if(dungeon[x][y].getEnvironment().equals("end")){
+        System.out.println("You win the game");
       }
 
 
