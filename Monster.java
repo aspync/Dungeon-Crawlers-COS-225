@@ -3,7 +3,8 @@ import java.util.Scanner;
 class Monster extends Entity{
   public Monster(String n, int h, int a){
     super(n, h, a);
-    //System.out.println("Monster created");
+//System.out.println("Monster created");
+//Creating/defining the monster and their name hp and attack
   }
   public void Battle(Player a, Scanner s){
     while(a.isAlive() && isAlive()){
@@ -17,6 +18,8 @@ class Monster extends Entity{
         a.heal();
       }
       a.takeDamage(this.Attack());
+//Takes in the numbers entered and earned by the user/player
+//Prints out the totals of each and their progress
     }
   }
 }
